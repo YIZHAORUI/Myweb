@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryoji Ikeda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* 打印样式 */
+      @media print {
+    @page {
+        margin: 0; /* 移除打印页面默认边距 */
+    }
+    body {
+        margin: 0; /* 移除内容区域边距 */
+        padding: 0;
+        background-image: url(image/poster\ final-03.png); /* 替换为实际图片路径 */
+        background-size: cover; /* 背景图片铺满页面 */
+        background-repeat: no-repeat;
+        background-position: center center; /* 背景图片居中 */
+        height: 100%; /* 确保 body 高度铺满 */
+    }
+    html, body {
+        height: 100%; /* 确保整个页面铺满打印区域 */
+    }
+
+
+            .no-print {
+                display: none; /* 隐藏不需要打印的元素 */
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="no-print">   这部分不会出现在打印页面。
+    <!-- 灰色顶部栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="https://www.ryojiikeda.com/" class="nav-item">works</a>
+            <a href="https://www.youtube.com/user/ryojiikedastudio" class="nav-item">youtube</a>
+            <a href="https://www.instagram.com/ryoji_ikeda_studio/" class="nav-item">instagram</a>
+        </nav>
+    </header>
+</div>
+
+    <!-- 正文 -->
+    <main>
+        <!-- 标题 -->
+        <div class="no-print">
+            <section class="main-title">
+            RYOJI IKEDA
+        </section>
+    </div>
+
+        <!-- 滚动文字栏 -->
+        <div class="no-print"> 
+            <section class="scrolling-text">
+            <div class="scroll-content">
+THIS TALK WILL BE HELD AT 5PM ON THE 30TH OF JANUARY 2025 AT UCA (FARNHAM)
+            </div>
+        </section>
+       </div>
+
+        <!-- 视频和图片 -->
+        <div class="no-print">
+            <section class="media-section">
+            <video class="media-video" autoplay muted loop>
+                <source src="video/1月2日.mp4" type="video/mp4">
+            </video>
+            
+            <div class="media-images">
+                
+                <img src="image/3-03.png" alt="Image 2" class="image-item">
+            </div>
+            <div class="no-print">
+                <img src="image/1.png" alt="Rotating Image" class="rotate"> 
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <!-- 固定底部栏 -->
+    <div class="no-print">
+        <footer class="footer">
+        <p class="footer-text">Data landscape and sound environment</p>
+        
+    </footer>
+</div>
+
+</body>
+</html>
